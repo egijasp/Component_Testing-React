@@ -1,6 +1,7 @@
 import React from 'react';
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
+import Button from './components/Button/Button';
 
 describe('<App />', () => {
   it('should render', () => {
@@ -63,5 +64,16 @@ describe('<App />', () => {
     render(<App />);
 
     fireEvent.click(screen.getByText('Pay $55.00'));
+  });
+});
+
+describe('<Button />', () => {
+  it('should render', () => {
+    const onClick = jest.fn();
+
+    render(<Button onClick={onClick}>Pay $55.00</Button>);
+    expect(screen.queryByText('Pay $55.00')).toBeInTheDocument();
+    fireEvent.click(screen.getByText('Pay $55.00'));
+    expect(onClick).toBeCalled();
   });
 });

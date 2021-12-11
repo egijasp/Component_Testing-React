@@ -170,9 +170,7 @@ const Form = () => {
           </select>
         </label>
         <Button
-          type="submit"
           onClick={submitHandler}
-          title="Pay $55.00"
         />
       </form>
     </div>
