@@ -1,0 +1,59 @@
+.form__container {
+  padding-top: 30px;
+}
+
+.form {
+ max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 25px;
+  padding-top: 30px;
+}
+
+.form__label {
+  display: grid;
+  width: 100%;
+  gap: 10px;
+  justify-items: left;
+}
+
+.input {
+  height: 40px;
+  width: 400px;
+  padding: 5px 10px;
+}
+
+.form__cardNumber-wrapper {
+  position: relative;
+}
+
+.form__input-icon {
+  position: relative;
+  top: -28px;
+  right: -170px;
+}
+
+.input__wrapper {
+  display: grid;
+  grid-template-columns: 200px 200px;
+}
+
+.input-small {
+  width: 190px;
+}
+
+.right {
+  justify-self: right;
+}
+.button {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+
